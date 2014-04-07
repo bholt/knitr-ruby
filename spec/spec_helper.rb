@@ -1,1 +1,1 @@
-require 'knitr-ruby/knittr'
+require 'knitr-ruby/knitr'

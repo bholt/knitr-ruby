@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "knitting" do
-  subject { KnitrRuby::Knittr.new }
+  subject { KnitrRuby::Knitr.new }
 
   describe "code chunk" do
     let(:input) { "```{r}\n3*3\n```" }

@@ -1,1 +1,1 @@
-require 'knitr-ruby/converter'
+require 'knitr-ruby/knitr'

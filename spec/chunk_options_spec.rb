@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "chunk options" do
 
-  subject { KnitrRuby::Knittr.new(:chunk_options => chunk_options) }
+  subject { KnitrRuby::Knitr.new(:chunk_options => chunk_options) }
   let(:input) { "```{r}\n3*3\n```" }
 
   describe "knit echo=FALSE" do

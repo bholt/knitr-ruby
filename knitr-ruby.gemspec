@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec", "~> 2.6"
 
-  s.files       = Dir.glob("lib/**/*.rb")
+  s.files       = ['lib/knitr-ruby.rb','lib/knitr-ruby/knitr.rb','lib/knitr-ruby/version.rb','lib/knitr-ruby/knitrscript.R']
 end
