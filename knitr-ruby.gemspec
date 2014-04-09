@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = ">= 1.3.6"
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency "rspec", "~> 2.6"
 
   s.files       = ['lib/knitr-ruby.rb','lib/knitr-ruby/knitr.rb','lib/knitr-ruby/version.rb','lib/knitr-ruby/knitrscript.R']

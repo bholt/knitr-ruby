@@ -1,0 +1,17 @@
+before_install:
+- curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
+- chmod 755 ./travis-tool.sh
+- "./travis-tool.sh bootstrap"
+install:
+- "./travis-tool.sh install_github rstudio/rmarkdown"
+- "./travis-tool.sh install_deps"
+script: bundle exec rake
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: cZmTdISooYUQ2F0dtYFuUobDy0lwBOziMJh60a6AoJK3yLSgsH6l8wqaMlozsMp6rDYc4c/8Epl18lgODVgu4T23r+2He9xQP7kTaKqRUMeVhDGYZjR28RYxeucNObmqhUQklLnCm92tl9C512yg61wZ/Jg9X7wVqRd3BqTZQRs=
+  gem: knitr-ruby
+  on:
+    tags: true
+    repo: ropensci/knitr-ruby
