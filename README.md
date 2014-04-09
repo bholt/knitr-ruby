@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mfenner/knitr-ruby.svg)](https://travis-ci.org/mfenner/knitr-ruby)
+[![Build Status](https://travis-ci.org/ropensci/knitr-ruby.svg)](https://travis-ci.org/ropensci/knitr-ruby)
 [![Gem Version](https://badge.fury.io/rb/knitr-ruby.svg)](http://badge.fury.io/rb/knitr-ruby)
 
 knitr-ruby
