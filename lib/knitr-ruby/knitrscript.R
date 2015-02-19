@@ -69,7 +69,7 @@ tmp <- do.call(opts_chunk$set, args) ## use this list as arguments to chunk opti
 
 ## hardcoded knitr package options - until we work out how best to have both package &
 ## chunk options supplied via command line argument
-opts_knit$set(base.url="http://ropensci.github.io/docs/", base.dir=".", root.dir=NULL, self.contained=FALSE, verbose=FALSE)
+opts_knit$set(base.url="", base.dir=".", root.dir=NULL, self.contained=FALSE, verbose=FALSE)
 
 ## knit the document being processed; takes inpu from stdin and outputs to stdout
 tmp <- knit(text = readLines(file("stdin")), output=stdout(), quiet=TRUE)
