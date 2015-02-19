@@ -36,7 +36,9 @@ take <- !(ind | logi | nas) ## select argument values not numeric or logicals
 VALS[take] <- paste("'", vals[take], "'", sep = "")
 
 ## Other handling
-lose <- which(nams == "root.dir")   ## temp: drop the root.dir argument
+
+## dump the 'root.dir' arg (if it exists)
+lose <- if ('root.dir' %in% nams) which(nams == 'root.dir') else length(nams)+1
 
 ## writeLines("Argument names and values")
 ## writeLines("<pre>")
