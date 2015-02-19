@@ -6,8 +6,8 @@ module KnitrRuby
 
     def knit(content)
       dir = File.expand_path File.dirname(__FILE__)
-      command = "./knitrscript.R --args #{options}"
-      Open3::popen3(command, chdir: dir) do |stdin, stdout, stderr, wait_thr|
+      command = "#{dir}/knitrscript.R --args #{options}"
+      Open3::popen3(command) do |stdin, stdout, stderr, wait_thr|
         stdin.puts content
         stdin.close
 
